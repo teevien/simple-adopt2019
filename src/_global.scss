@@ -1,0 +1,24 @@
+html {
+    font-size:62.5%;
+
+    body {
+        font-size:1.6em;
+        font-family:$baseFont;
+        background: $purple;
+        color: $darkPurple;
+
+        header {
+            padding:$l-size;
+            text-align:center;
+            .icon {
+                font-size:$l-size;
+            }
+        }
+
+        .wrapper {
+            max-width:1280px;
+            width:85%;
+            margin:0 auto;
+        }
+    }
+}

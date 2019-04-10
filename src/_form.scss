@@ -1,0 +1,77 @@
+form {
+    margin-top:$m-size;
+
+    select, input, button {
+        background: $darkPurple;
+        border:none;
+        padding: 5px;
+    };
+
+    input, button {
+        width:calc(50% - 5px);
+        margin-top:10px;
+    };
+
+    button {
+        margin-left:10px;
+    };
+
+    .selectdiv-container {
+
+         .selectdiv {
+        width:calc(25% - 8px);
+        float:left;
+        margin-right: 10px;
+        position:relative;
+
+            &:last-child {
+                margin:0;
+            };
+
+            &:after {
+                content: '\f0dd';
+                font: normal normal normal 17px/1 FontAwesome;
+                position:absolute;
+                right:10px;
+                top:22px;
+                color: $black;
+                pointer-events: none;
+            };
+
+            &::-ms-expand {
+                display:none;
+            };
+            
+            select {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
+                
+                display:block;
+                width:100%;
+                width:100%;
+            };
+
+            label {
+                font-weight:bold;
+            };
+        };
+    };
+
+    input {
+        text-align:center;
+    };
+
+   ::placeholder {
+        color: $black;
+        opacity: 1; /* Firefox */
+    };
+
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $black;
+    };
+
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $black;
+    };
+};

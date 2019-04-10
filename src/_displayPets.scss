@@ -1,0 +1,39 @@
+.results {
+    margin-top:$l-size;
+
+    .pets {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .pet {
+            width:30%;
+            height:300px;
+            margin: 10px;
+            overflow:hidden;
+            position:relative;
+
+            .pet-info {
+                position:absolute;
+                top:0;
+                right:0;
+                left:0;
+                bottom:0;
+                background: rgba(135, 75, 163, 0.5);
+                color:$black;
+                display:none;
+                padding:10px;
+                // width:100%;
+                text-align:center;
+            };
+
+            img {
+                max-width:100%;
+            };
+
+            &:hover .pet-info {
+                display:block;
+            };
+        };
+    };
+};
